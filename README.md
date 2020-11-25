@@ -41,7 +41,8 @@ npm run dev
 ```
 This starts the development server on http://localhost:3000.
 
-Visit http://localhost:3000 to view your application.
+- Visit http://localhost:3000 to view your application (for local environments) or
+- Visit http://<dns or url or public ip>:3000 to view your application (for server environments).
 
 ## Alternative start
 You can also build the application:
