@@ -52,10 +52,7 @@ We detected TypeScript in your project and created a tsconfig.json file for you.
 
 event - compiled successfully
 ```
-
-
-
-Type `CTRL+C` to exit
+Type `CTRL+C` to exit (you may do this after you test on your browser)
 
 This starts the development server on http://localhost:3000.
 
@@ -85,4 +82,4 @@ $ npm start
 ready - started server on http://localhost:3000
 ```
 
-Type `CTRL+C` to exit
+Type `CTRL+C` to exit (you may do this after you test on your browser)
