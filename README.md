@@ -39,7 +39,11 @@ To start developing your application run
 ```
 npm run dev 
 ```
+Type `CTRL+C` to exit
+
 This starts the development server on http://localhost:3000.
+
+Go to your preferred browser (Google Chrome, Firefox etc) and:
 
 - Visit http://localhost:3000 to view your application (for local environments) or
 - Visit http://<dns or url or public ip>:3000 to view your application (for server environments).
@@ -54,3 +58,4 @@ And start the application
 ```
 npm start
 ```
+Type `CTRL+C` to exit
