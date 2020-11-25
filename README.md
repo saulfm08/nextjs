@@ -22,7 +22,7 @@ npm --version
 ```
 Using another Linux Distribution, [take a look here](https://github.com/nodesource/distributions/blob/master/README.md)
 ## Get Started
-Go to your workspace and clone:
+Go to `/home/app` and clone:
 
 ``` 
 git clone git@github.com:saulfm08/nextjs.git
