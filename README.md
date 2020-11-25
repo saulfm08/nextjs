@@ -39,6 +39,22 @@ To start developing your application run
 ```
 npm run dev 
 ```
+
+If its working, you should see something like this:
+```
+$ npm run dev
+
+> nextjs@1.0.0 dev /home/saul/nodejs_samples/nextjs/code
+> next dev
+
+ready - started server on http://localhost:3000
+We detected TypeScript in your project and created a tsconfig.json file for you.
+
+event - compiled successfully
+```
+
+
+
 Type `CTRL+C` to exit
 
 This starts the development server on http://localhost:3000.
@@ -58,4 +74,15 @@ And start the application
 ```
 npm start
 ```
+
+If its working, you should see something like this:
+```
+$ npm start
+
+> nextjs@1.0.0 start /home/saul/nodejs_samples/nextjs/code
+> next start
+
+ready - started server on http://localhost:3000
+```
+
 Type `CTRL+C` to exit
