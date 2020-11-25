@@ -1,0 +1,33 @@
+{
+  "name": "nextjs",
+  "version": "1.0.0",
+  "description": "A sample Next.Js application for study",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saulfm08/nextjs.git"
+  },
+  "keywords": [
+    "nextjs",
+    "nodejs"
+  ],
+  "author": "Saul Felipe Coelho Figueiredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saulfm08/nextjs/issues"
+  },
+  "homepage": "https://github.com/saulfm08/nextjs#readme"
+}
