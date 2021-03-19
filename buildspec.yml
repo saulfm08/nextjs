@@ -1,0 +1,38 @@
+version: 0.2
+env:
+  variables:
+    APP: "code"
+    NODE_V: "14"
+  # parameter-store:
+  #   LOGIN_PASSWORD: /CodeBuild/dockerLoginPassword
+phases:
+  install:
+    runtime-versions:
+      nodejs: "$NODE_V"
+    commands:
+      - git config --global credential.helper '!aws codecommit credential-helper $@'
+      - git config --global credential.UseHttpPath true
+  pre_build:
+    commands:
+      - aws codeartifact login --tool npm --domain devops-study --domain-owner 250664768088 --repository NPM-Registry
+  build:
+    commands:
+      - echo "Entered the build phase. Build started on `date`"
+      - cd $APP && npm install
+      - rm -rf ./node_modules
+    finally:
+      - echo "Final command"
+  post_build:
+    commands:
+      - echo "Entered the post_build phase..."
+      - echo "Fix package version"
+      - cd $CODEBUILD_SRC_DIR/$APP
+      - bash auto-bump-version.sh
+      - echo "Publish NPM Package"
+      - npm publish
+      - echo "Ended on `date`"
+      - echo Build completed on `date`
+# artifacts:
+#   files:
+#     - '**/*'
+#   name: artifact-nextjs-$AWS_REGION 

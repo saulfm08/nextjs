@@ -1,6 +1,6 @@
 {
-  "name": "nextjs",
-  "version": "1.0.0",
+  "name": "nextjs-sample-app",
+  "version": "1.0.2",
   "description": "A sample Next.Js application for study",
   "main": "index.js",
   "dependencies": {
