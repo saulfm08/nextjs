@@ -14,7 +14,7 @@ phases:
       - git config --global credential.UseHttpPath true
   pre_build:
     commands:
-      - aws codeartifact login --tool npm --domain devops-study --domain-owner 250664768088 --repository NPM-Registry
+      - aws codeartifact login --tool npm --domain <domain-name> --domain-owner <aws-acc-id> --repository <registry-name>
   build:
     commands:
       - echo "Entered the build phase. Build started on `date`"
