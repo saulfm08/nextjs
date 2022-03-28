@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  nextjs:
+    container_name: nextjs-app
+    build: .
+    image: <your container registry server>/nextjs-app:<your tag>
